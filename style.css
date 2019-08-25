@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap');
+
+body {
+    background-color: #FFF;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    color: #333;
+    margin: 0;
+    padding: 72px 0 0 0;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* <-- GENERAL / HELPER CLASSES --> */
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: 96px;
+    margin-left: 96px;
+}
+
+.green {
+    color: #178a27;
+}
+
+.blue {
+    color: #1686cb;
+}
+
+.gray {
+    color: #666666;
+}
+
+
+/* <-- NAVIGATION --> */
+
+.navigation {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    width: 100%;
+    min-height: 64px;
+    background-color: #383e4c;
+}
+
+.menu {
+    display: inline-grid;
+    grid-auto-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.menu a:link {
+    text-decoration: none;
+    color: #FFF;
+}
+
+.menu a:visited {
+    color: #FFF;
+}
+
+
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    display: inline-grid;
+    color: #FFF;
+    font-size: 20px;
+    margin: 0 10px 0 10px;
+    padding: 14px 24px 14px 24px;
+    border: 1px solid #646d7c;
+}
+
+li.active {
+    background-color: #49505f !important;
+}
+
+
+/* <-- HEADER BANNER --> */
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 55vh;
+    width: 100%;
+    color: #FFF;
+    background-image: url('./img/bg-1.jpg');
+    background-position: center 200%;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.header h1 {
+    text-shadow: 2px 2px #333;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 64px;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.header h2 {
+    font-weight: normal;
+    font-size: 24px;
+}
+
+/* <-- ABOUT PAGE --> */
+
+.about {
+    position: relative;
+    clear: both;
+    margin-top: 64px;
+}
+
+.box-content {
+    position: relative;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    grid-template-columns: repeat(3, 400px);
+}
+
+.box-content-2-columns {
+    position: relative;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    grid-template-columns: repeat(2, 600px);
+}
+
+
+.box-2-columns {
+    position: relative;
+    width: 560px;
+    align-content: center;
+    justify-content: center;
+    background-color: #f2f2f2;
+    padding-bottom: 24px;
+    margin-bottom: 400px;
+}
+
+.box-2-columns h2 {
+    text-align: center;
+    color: #666;
+}
+
+.box-2-columns p {
+    padding: 0px 18px 0px 18px;
+    font-size: 14px;
+    line-height: 1.6em;
+}
+
+.box {
+    position: relative;
+    width: 360px;
+    align-content: center;
+    justify-content: center;
+    background-color: #f2f2f2;
+    padding-bottom: 24px;
+    margin-bottom: 48px;
+}
+
+.box p {
+    font-size: 14px;
+    line-height: 1.6em;
+    padding: 9px;
+    margin: 9px;
+}
+
+.box h2 {
+    font-size: 20px;
+    padding: 9px !important;
+    margin: 0 !important;
+}
+
+.box img {
+    width: 100%;
+}
+
+
+.box a:link {
+    position: relative;
+    color: #FFF;
+    text-decoration: none;
+    border: 0;
+    min-height: 36px;
+    padding: 9px 27px 9px 27px;
+    font-size: 18px;
+    border-radius: 4px;
+    margin: 0 auto;
+    margin-bottom: 18px;
+}
+
+.box-link {
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 24px;
+}
+
+.box a:visited {
+    color: #FFF;
+}
+
+.btn-red {
+    background-color: #cb1616;
+}
+
+.btn-blue {
+    background-color: #1686cb;
+}
+
+.btn-green {
+    background-color: #178a27;
+
+}
+
+
+/* <-- SERVICES PAGE --> */
+
+/* <-- CONTACT PAGE --> */
