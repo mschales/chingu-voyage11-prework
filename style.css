@@ -120,6 +120,7 @@ li.active {
     position: relative;
     clear: both;
     margin-top: 64px;
+    margin-bottom: 64px;
 }
 
 .box-content {
@@ -146,7 +147,6 @@ li.active {
     justify-content: center;
     background-color: #f2f2f2;
     padding-bottom: 24px;
-    margin-bottom: 400px;
 }
 
 .box-2-columns h2 {
@@ -227,4 +227,232 @@ li.active {
 
 /* <-- SERVICES PAGE --> */
 
+.services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    color: #FFF;
+}
+
+.services-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    clear: both;
+    min-height: 35vh;
+    min-width: 100%;
+    color: #FFF;
+    background-image: url('./img/bg-2.jpg');
+    background-position: center 200%;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-bottom: 64px;
+}
+
+.services h1 {
+    font-size: 36px;
+    text-shadow: 2px 2px #333;
+    font-weight: 400 !important;
+}
+
+.services p {
+    font-size: 18px;
+}
+
+.services-container {
+    text-align: center;
+    width: 50%;
+}
+
+
+.box-4-columns-container {
+    position: relative;
+    color: #333;
+    display: grid;
+    grid-gap: 18px;
+    align-content: center;
+    justify-content: center;
+    grid-template-columns: repeat(4, 250px);
+}
+
+
+.box-4-columns-item img {
+    width: 100%;
+}
+
+
+.box-4-columns-item {
+    font-size: 14px;
+    position: relative;
+    width: 100%;
+    align-content: center;
+    justify-content: center;
+    color: #333;
+    background-color: #f2f2f2;
+}
+
+.box-4-columns-item h2 {
+    text-align: center;
+    color: #666;
+}
+
+.box-4-columns-item p {
+    padding: 18px;
+    padding: 0px 18px 0px 18px;
+    font-size: 14px;
+    line-height: 1.6em;
+}
+
+.box-1-column-container {
+    position: relative;
+    color: #333;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    margin-bottom: 64px;
+}
+
+.box-1-column-item {
+    margin-top: 48px;
+    width: 1055px;
+    background-color: #f2f2f2;
+}
+
+.box-1-column-item h2 {
+    padding: 9px 24px 0px 24px;
+}
+
+.box-1-column-item p {
+    font-size: 14px;
+    padding: 9px 24px 0px 24px;
+}
+
+.box-1-column-item img {
+    width: 100%;
+}
+
+
 /* <-- CONTACT PAGE --> */
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    color: #FFF;
+    background-image: url('./img/bg-3.jpg');
+    background-position: center 200%;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    clear: both;
+    min-height: 35vh;
+    width: 50%;
+    color: #FFF;
+    margin-bottom: 64px;
+}
+
+.contact h1 {
+    font-size: 2.5em;
+    text-shadow: 2px 2px #333;
+    font-weight: 400 !important;
+}
+
+.contact-message-area {
+    background-color: rgb(255, 255, 255, 0.4);
+    color: #111;
+    font-size: 18px;
+    padding: 24px;
+}
+
+
+.contact form {
+    width: 100%;
+    margin-top: 18px;
+}
+
+
+.form-information {
+    display: grid; 
+    grid-gap: 9px;
+    width: 49%;
+    float: left;
+}
+
+.form-message {
+    width: 49%;
+    margin-left: 2%;
+    float: left;
+}
+
+.contact input[type='text'] {
+    background-color: rgb(255, 255, 255, 0.4);
+    border: 0;
+    color: #111;
+    font-size: 18px;
+    padding: 9px;
+}
+
+.contact input[type='email'] {
+    background-color: rgb(255, 255, 255, 0.4);
+    border: 0;
+    color: #333;
+    font-size: 18px;
+    padding: 9px;
+}
+
+.contact input[type='text'] {
+    background-color: rgb(255, 255, 255, 0.4);
+    border: 0;
+    color: #333;
+    font-size: 18px;
+    padding: 9px;
+}
+
+textarea {
+    box-sizing: border-box;
+    background-color: rgb(255, 255, 255, 0.4);
+    border: 0;
+    width: 100%;
+    padding: 18px;
+    height: 138px;
+    color: #111;
+    font-size: 18px;
+}
+
+.button-submit {
+    border: 1px solid #fff;
+    font-size: 1.2em;
+    margin-top: 18px;
+    padding: 9px 18px 9px 18px;
+    border-radius: 4px;
+    background-color: #333;
+    color: #eee;
+}
+
+footer {
+    width: 95%;
+    font-size: 0.8em;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+}
+
+footer .item {
+    margin: auto 0;
+    text-align: center;
+    margin: 5px;
+    flex: 33.3%;
+}

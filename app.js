@@ -2,6 +2,7 @@ const getNavLinks = document.getElementById("menu").querySelectorAll("a");
 const about = document.getElementById("about");
 const header = document.getElementById("header");
 let curHash = '';
+let offsetValue = 200;
 
 setupNavItemsListeners();
 
@@ -18,7 +19,7 @@ function lookNavItem() {
   getNavLinks.forEach(navItem => {
     if (navItem.hash.length <= 0) return;    
     let gethash = navItem.hash.substr(1, (navItem.hash.length));
-    let distanceCheck = (document.getElementById(gethash).offsetTop - 96);
+    let distanceCheck = (document.getElementById(gethash).offsetTop - offsetValue);
     if ( window.scrollY > distanceCheck) {
         clearActiveNavItems();
         navItem.parentElement.classList.add('active');
