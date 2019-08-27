@@ -64,8 +64,6 @@ html {
     color: #FFF;
 }
 
-
-
 ul {
     list-style-type: none;
 }
@@ -118,31 +116,29 @@ li.active {
 
 .about {
     position: relative;
-    clear: both;
     margin-top: 64px;
     margin-bottom: 64px;
 }
 
 .box-content {
-    position: relative;
     display: grid;
     align-content: center;
     justify-content: center;
-    grid-template-columns: repeat(3, 400px);
+    grid-gap: 10px;
+    grid-template-columns: repeat(3, 380px);
 }
 
 .box-content-2-columns {
-    position: relative;
     display: grid;
     align-content: center;
     justify-content: center;
-    grid-template-columns: repeat(2, 600px);
+    grid-gap: 10px;
+    grid-template-columns: repeat(2, 575px);
 }
 
 
 .box-2-columns {
     position: relative;
-    width: 560px;
     align-content: center;
     justify-content: center;
     background-color: #f2f2f2;
@@ -160,14 +156,18 @@ li.active {
     line-height: 1.6em;
 }
 
+.box-2-columns img {
+    width: 100%;
+}
+
 .box {
     position: relative;
-    width: 360px;
     align-content: center;
     justify-content: center;
     background-color: #f2f2f2;
     padding-bottom: 24px;
     margin-bottom: 48px;
+    width: 100%;
 }
 
 .box p {
@@ -186,7 +186,6 @@ li.active {
 .box img {
     width: 100%;
 }
-
 
 .box a:link {
     position: relative;
@@ -223,7 +222,6 @@ li.active {
     background-color: #178a27;
 
 }
-
 
 /* <-- SERVICES PAGE --> */
 
@@ -455,4 +453,267 @@ footer .item {
     text-align: center;
     margin: 5px;
     flex: 33.3%;
+}
+
+.mobile-menu-button {
+    display: none;
+}
+
+.hidden {
+    display: none !important;
+}
+
+@media (max-width: 1160px) {
+    .navigation {
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        width: 100%;
+        min-height: 64px;
+        background-color: #383e4c;
+    }
+    
+    .box-content {
+        grid-template-columns: repeat(3, 300px);
+    }
+
+
+    .box-content-2-columns {
+        grid-template-columns: repeat(2, 455px) !important;
+    }
+    
+    
+    .box-4-columns-container {
+        grid-template-columns: repeat(4, 220px);
+    }
+
+
+    .box-link {
+        text-align: center;
+        min-width: 100%;
+        margin: 0 auto;
+        margin-top: 24px;
+    }
+}
+
+@media (max-width: 960px) {
+    .box-content {
+        grid-template-columns: repeat(3, 250px);
+    }
+
+
+    .box-content-2-columns {
+        grid-template-columns: repeat(2, 375px) !important;
+    }
+    
+    
+    .box-4-columns-container {
+        grid-template-columns: repeat(2, 350px) !important;
+        grid-gap: 40px;
+    }
+    
+    .box-1-column-item {
+        width: 768px;
+    }
+
+    .mobile-menu {
+        position: fixed;
+        right: 0;
+        top: 0;
+        background-color: #222;
+        min-height: 100%;
+        width: 250px;
+    }
+
+    ul {
+        display: block;
+    }
+}
+
+@media (max-width: 800px) {
+
+    
+    .menu {
+        display: grid;
+        grid-auto-columns: 1fr;
+        align-items: center;
+        justify-content: center;
+        grid-gap: 20px;
+        width: 100%;
+    }
+    
+
+    ul {
+        display: none;
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+    }
+    
+    li {
+        color: #FFF;
+        padding: 9px 4px 9px 4px;
+        margin: 0;
+        width: 100%;
+        font-size: 20px;
+        border: 1px solid #646d7c;
+    }
+
+    .mobile-menu {
+        position: fixed;
+        right: 0;
+        top: 0;
+        background-color: #222;
+        min-height: 100%;
+        width: 250px;
+    }
+
+
+    .mobile-menu-button {
+        display: block;
+        border: 0;
+        margin: 9px auto 9px auto;
+        border-radius: 4px;
+        height: 48px;
+        width: 96px;
+    }
+    
+    .box-content {
+        position: relative;
+        display: grid;
+        align-content: center;
+        justify-content: center;
+        grid-template-columns: 1fr;
+    }
+
+    .contact-container {
+        width: 90%;
+    }
+
+    .form-information {
+        width: 100%;
+        margin-bottom: 9px;
+    }
+    
+    .form-message {
+        width: 100%;
+    }
+
+    .box-content-2-columns {
+        grid-template-columns: 565px !important;
+    }
+
+    .box-content-2-columns-item {
+        padding: 0;
+        margin: 0;
+    }
+
+    .box-4-columns-container {
+        grid-template-columns: repeat(2, 250px) !important;
+
+    }
+
+
+    .box-1-column-item {
+        display: none !important;
+    }
+
+    footer {
+        width: 95%;
+        font-size: 0.8em;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    
+    footer .item {
+        margin: auto 0;
+        text-align: center;
+        margin: 5px;
+    }
+    
+}
+
+@media (max-width: 600px) {
+
+    .navigation {
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        width: 100%;
+        min-height: 64px;
+        background-color: #383e4c;
+    }
+    
+    .menu {
+        display: grid;
+        grid-auto-columns: 1fr;
+        align-items: left;
+        justify-content: left;
+        width: 100%;
+    }
+    
+
+    ul {
+        display: none;
+        list-style-type: none;
+    }
+    
+    li {
+        display: grid;
+        color: #FFF;
+        width: 100%;
+        font-size: 20px;
+        border: 1px solid #646d7c;
+    }
+    
+    .box-content {
+        position: relative;
+        display: grid;
+        align-content: center;
+        justify-content: center;
+        grid-template-columns: 1fr;
+    }
+    
+    .box-content-2-columns {
+        position: relative;
+        display: grid;
+        align-content: center;
+        justify-content: center;
+        grid-template-columns: 425px !important;
+    }
+
+    .box-content-2-columns-item {
+        padding: 0;
+        margin: 0;
+    }
+
+    .box-4-columns-container {
+        position: relative;
+        color: #333;
+        display: grid;
+        grid-gap: 18px;
+        align-content: center;
+        justify-content: center;
+        grid-template-columns: 350px !important;
+    }
+
+    .box-1-column-item {
+        display: none !important;
+    }
+
+    footer {
+        width: 95%;
+        font-size: 0.8em;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    
+    footer .item {
+        margin: auto 0;
+        text-align: center;
+        margin: 5px;
+    }
+    
 }
