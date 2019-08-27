@@ -610,13 +610,14 @@ footer .item {
 
     .box-4-columns-container {
         grid-template-columns: repeat(2, 250px) !important;
-
     }
 
 
+    
     .box-1-column-item {
-        display: none !important;
+        width: 540px;
     }
+
 
     footer {
         width: 95%;
@@ -699,7 +700,7 @@ footer .item {
     }
 
     .box-1-column-item {
-        display: none !important;
+        width: 350px;
     }
 
     footer {

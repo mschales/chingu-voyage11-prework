@@ -35,9 +35,19 @@ function setupNavItemsListeners() {
       clearActiveNavItems();
       let gethash = e.target.hash.substr(1, (e.target.hash.length));
 
-    ulSelector.style.display = 'none';
-    ulSelector.style.visibility = "hidden";
-    ulSelector.classList.remove("active");
+      if (window.screen.width < 800) {
+        if (ulSelector.classList.contains("active")) {
+          ulSelector.classList.remove("active");
+          ulSelector.style.display = 'none';
+          ulSelector.style.visibility = "hidden"; 
+        }
+        
+        else {
+          ulSelector.style.visibility = "visible"; 
+          ulSelector.style.display = 'block';
+          ulSelector.classList.add("active");
+        }
+      }
       
       setScrollOffset();
       smoothScroll(gethash);
@@ -94,6 +104,13 @@ window.addEventListener('resize', () => {
   if (window.screen.width > 800) {
     ulSelector.style.visibility = "visible"; 
     ulSelector.style.display = 'block';
+  }
+
+  else if (window.screen.width <= 800) {
+    let selector = document.querySelector('ul');
+    selector.classList.remove("active");
+    selector.style.visibility = "hidden"; 
+    selector.style.display = 'none';
   }
 });
 
