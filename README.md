@@ -1,5 +1,4 @@
-# Responsive websites 
-## - for Chingu Voyage 11 pre-work
+# Responsive website template
 
 ## Overview
 
