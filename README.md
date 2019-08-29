@@ -1,4 +1,4 @@
-# chingus-voyage11-prework
+# Responsive websites for Chingu Voyage 11 pre-work
 
 **Overview**
 
